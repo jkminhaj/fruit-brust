@@ -19,14 +19,17 @@
     <style>
         *{
             font-family: 'Lato', sans-serif;
+        } 
+        .dark-img{
+            filter: brightness(0.7);
         }
-        
+           
     </style>
 </head>
 <body>
     <header class="lg:mx-40">
         <!-- navigaton bar -->
-        <nav class="text-white bg-[#F85559] rounded-full w-full h-16 flex justify-between items-center">
+        <nav class="text-white bg-[#F85559] rounded-full w-full h-[5rem] flex justify-between items-center my-3">
             <div class="flex gap-5 ml-5">
                 <ul>Home</ul>
                 <ul>About Us</ul>
@@ -46,6 +49,90 @@
                 </svg>
             </div>
         </nav>
+
+        <!-- hero section -->
+        <section class="mt-6">
+            <div class="relative">
+                <!-- image carousel -->
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="./images/banner1.png" class="w-full dark-img" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <!-- carousel info -->
+                        <div class="text-white flex flex-col items-center space-y-6 lg:mb-16">
+                            <h2 class="text-5xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h2>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
+                        </div> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img src="./images/banner2.png" class="w-full dark-img" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <!-- carousel info -->
+                        <div class="text-white flex flex-col items-center space-y-6 lg:mb-16">
+                            <h2 class="text-5xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h2>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
+                        </div>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img src="./images/banner3.png" class="w-full dark-img" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <!-- carousel info -->
+                        <div class="text-white flex flex-col items-center space-y-6 lg:mb-16">
+                            <h2 class="text-5xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h2>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
+                        </div> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img src="./images/banner4.png" class="w-full dark-img" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <!-- carousel info -->
+                        <div class="text-white flex flex-col items-center space-y-6 lg:mb-16">
+                            <h2 class="text-5xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h2>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
+                        </div> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                </div>
+                <!-- fruits -->
+                <div class=" absolute top-[79%] left-[50%] translate-x-[-50%] w-[80%] m-auto hidden lg:flex justify-around bg-white drop-shadow-md pt-10 pb-6 px-10 rounded-lg">
+                    <div class="flex flex-col items-center gap-2">
+                        <div><img src="./images/fruit1.png" alt="" class="h-20"></div>
+                        <p>Strawbarry</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div><img src="./images/fruit2.png" alt="" class="h-20"></div>
+                        <p>Orange</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div><img src="./images/fruit3.png" alt="" class="h-20"></div>
+                        <p>Mango</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div><img src="./images/fruit4.png" alt="" class="h-20"></div>
+                        <p>Strawbarry</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div><img src="./images/fruit5.png" alt="" class="h-20"></div>
+                        <p>Mango</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 </html>
