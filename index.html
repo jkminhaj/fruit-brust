@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
-    <link rel="shortcut icon" href="./images/favico.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
     <!-- Lato google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +20,32 @@
         *{
             font-family: 'Lato', sans-serif;
         }
+        
     </style>
 </head>
 <body>
-    <p>Hello World</p>
+    <header class="lg:mx-40">
+        <!-- navigaton bar -->
+        <nav class="text-white bg-[#F85559] rounded-full w-full h-16 flex justify-between items-center">
+            <div class="flex gap-5 ml-5">
+                <ul>Home</ul>
+                <ul>About Us</ul>
+                <ul>Shop</ul>
+                <ul>All Fruits</ul>
+            </div>
+            <div class="flex items-center gap-2">
+                <div>
+                    <img src="./images/logo.png" alt="" class="h-12">
+                </div>
+                <h2 class="text-3xl font-bold">Fruit Brust</h2>
+            </div>
+            <div class="flex mr-5 bg-white px-7 rounded-full h-11 items-center">
+                <input type="text" class="input-ghost input-focus:none" placeholder="Search here">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
